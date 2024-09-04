@@ -1,5 +1,5 @@
 # Предположив, что подключение к БД выполняется в другом месте, опишу модели и методы согласно заданию при помощи SQLAlchemy
-from sqlalchemy import Column, Integer, String, DateTime, ARRAY
+from sqlalchemy import Column, Integer, String, DateTime, ARRAY # Нужно учитывать, что приведенное решение с использованием ARRAY доступно к использованию при работе с БД PostgreSQL. SQLite, например, массивы не поддерживает.
 from sqlalchemy.orm import declarative_base
 from datetime import datetime
 
